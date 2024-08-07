@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import './Register.css'; // Assuming you have a corresponding CSS file
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './Register.css';
+import { useNavigate } from 'react-router-dom';
 
 function Register() {
   const [email, setEmail] = useState('');
@@ -9,6 +10,7 @@ function Register() {
   const [username, setUsername] = useState('');
   const [privacy, setPrivacy] = useState(false);
   const [receiveMail, setReceiveMail] = useState(false);
+  const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     const { id, value, type, checked } = e.target;
@@ -26,22 +28,23 @@ function Register() {
     return email !== '' && password !== '' && username !== '' && privacy && receiveMail;
   };
 
-  const handleRegisterClick = () => {
+  const handleRegister = () => {
     if (isFormValid()) {
-      // Display success toast and redirect
-      toast.success('Registration successful!', {
-        onClose: () => {
-          window.location.href = 'login.html'; // Redirect after toast closes
-        }
-      });
+      // Show success toast
+      toast.success("Registration successful!");
+
+      // Redirect to login page after 3 seconds
+      setTimeout(() => {
+        navigate('/login'); // Navigate to the home page after the toast
+      }, 500);
     } else {
-      // Display error toast
-      toast.error('Please fill all the required fields!');
+      toast.error("Please fill in all required fields.");
     }
   };
 
   return (
     <div>
+      <ToastContainer />
       <section className="Wraper">
         <div className="container-fluid">
           <div className="row">
@@ -135,7 +138,7 @@ function Register() {
                           type="button"
                           className={`submit__btn ${isFormValid() ? 'active__' : ''}`}
                           value="Register"
-                          onClick={handleRegisterClick}
+                          onClick={handleRegister}
                         />
                       </form>
                       <label>Already have an account? <a className="hyp" href="/login">Login here</a></label>
@@ -161,9 +164,6 @@ function Register() {
           </div>
         </div>
       </footer>
-
-      {/* Toast Container */}
-      <ToastContainer />
     </div>
   );
 }
