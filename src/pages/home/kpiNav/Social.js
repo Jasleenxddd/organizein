@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './Header';
-import Navigation from './Navigation';
-import Sidebar from './Sidebar';
-import Footer from './Footer';
-import ContentArea from './ContentArea';
-import './Home.css';
+import Header from '../Header';
+import Navigation from '../Navigation';
+import Sidebar from '../kpiNav/SideNavs/SSocial';
+import Footer from '../Footer';
+import ContentArea from '../ContentArea';
+import '../Home.css';
 
-function Home() {
+function Web() {
   return (
     <div className="theme-body">
       <div className="theme-wrapper">
@@ -22,4 +22,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Web;

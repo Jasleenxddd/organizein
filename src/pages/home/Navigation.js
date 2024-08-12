@@ -8,7 +8,6 @@ import Artboard15 from "../home/images/hover/Artboard15.jpg"
 import Artboard16 from "../home/images/hover/Artboard16.jpg"
 import Artboard17 from "../home/images/hover/Artboard17.jpg"
 import Artboard18 from "../home/images/hover/Artboard18.jpg"
-
 import Artboard1 from "../home/images/Artboard1.jpg";
 import Artboard2 from "../home/images/Artboard2.jpg";
 import Artboard3 from "../home/images/Artboard3.jpg";
@@ -19,8 +18,7 @@ import Artboard7 from "../home/images/Artboard7.jpg";
 import Artboard8 from "../home/images/Artboard8.jpg";
 import Artboard9 from "../home/images/Artboard9.jpg";
 import Artboard14 from "../home/images/Artboard14.jpg";
-
-
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
@@ -44,7 +42,7 @@ function Navigation() {
                   <style>
                     {`li.active img.inactive { display: none; }`}
                   </style>
-                  <a href="index.html">
+                  <a href="/home">
                     <img src={Artboard1} className="inactive" alt="icons1" />
                     <img src={Artboard12} className="active" alt="icons1" />
                   </a>
@@ -54,25 +52,25 @@ function Navigation() {
                 </div>
               </li>
               <li className="active">
-                <div className="head-ic-bg">
-                <style>
-                    {`li.active img.inactive { display: none; }`}
-                  </style>
-                  <a href="SEO.html">
-                    <img src={Artboard3} className="inactive" alt="icons1" />
-                    <img src={Artboard18} className="active" alt="icons1" />
-                  </a>
-                </div>
-                <div className="head-title">
-                  <p>SEO</p>
-                </div>
-              </li>
+  <div className="head-ic-bg">
+    <style>
+      {`li.active img.inactive { display: none; }`}
+    </style>
+    <Link to="/SEO">
+      <img src={Artboard3} className="inactive" alt="icons1" />
+      <img src={Artboard18} className="active" alt="icons1" />
+    </Link>
+  </div>
+  <div className="head-title">
+    <p>SEO</p>
+  </div>
+</li>
               <li className="active">
                 <div className="head-ic-bg">
                 <style>
                     {`li.active img.inactive { display: none; }`}
                   </style>
-                  <a href="sem.html">
+                  <a href="/SEM">
                     <img src={Artboard5} className="inactive" alt="icons1" />
                     <img src={Artboard16} className="active" alt="icons1" />
                   </a>
@@ -86,7 +84,7 @@ function Navigation() {
                 <style>
                     {`li.active img.inactive { display: none; }`}
                   </style>
-                  <a href="social.html">
+                  <a href="/Social">
                     <img src={Artboard4} className="inactive" alt="icons1" />
                     <img src={Artboard17} className="active" alt="icons1" />
                   </a>
@@ -100,7 +98,7 @@ function Navigation() {
                 <style>
                     {`li.active img.inactive { display: none; }`}
                   </style>
-                  <a href="mail.html">
+                  <a href="/Mail">
                     <img src={Artboard2} className="inactive" alt="icons1" />
                     <img src={Artboard13} className="active" alt="icons1" />
                   </a>
@@ -114,10 +112,10 @@ function Navigation() {
                 <style>
                     {`li.active img.inactive { display: none; }`}
                   </style>
-                  <a href="web.html">
+                  <Link href="/Web">
                     <img src={Artboard9} className="inactive" alt="icons1" />
                     <img src={Artboard10} className="active" alt="icons1" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="head-title">
                   <p>Web</p>
@@ -128,7 +126,7 @@ function Navigation() {
                 <style>
                     {`li.active img.inactive { display: none; }`}
                   </style>
-                  <a href="myacc.html">
+                  <a href="/More">
                     <img src={Artboard6} className="inactive " alt="icons1" />
                     <img src={Artboard15} className="active " alt="icons1" />
                   </a>
