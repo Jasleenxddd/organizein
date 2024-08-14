@@ -1,23 +1,23 @@
 import React from 'react';
 import './Home.css';
-import Artboard12 from "../home/images/hover/Artboard12.jpg"
-import Artboard10 from "../home/images/hover/Artboard10.jpg"
-import Artboard11 from "../home/images/hover/Artboard11.jpg"
-import Artboard13 from "../home/images/hover/Artboard13.jpg"
-import Artboard15 from "../home/images/hover/Artboard15.jpg"
-import Artboard16 from "../home/images/hover/Artboard16.jpg"
-import Artboard17 from "../home/images/hover/Artboard17.jpg"
-import Artboard18 from "../home/images/hover/Artboard18.jpg"
-import Artboard1 from "../home/images/Artboard1.jpg";
-import Artboard2 from "../home/images/Artboard2.jpg";
-import Artboard3 from "../home/images/Artboard3.jpg";
+import Artboard12 from "..//home/images/hover/Artboard12.jpg"
+import Artboard10 from "..//home/images/hover/Artboard10.jpg"
+import Artboard11 from "..//home/images/hover/Artboard11.jpg"
+import Artboard13 from "..//home/images/hover/Artboard13.jpg"
+import Artboard15 from "..//home/images/hover/Artboard15.jpg"
+import Artboard16 from "..//home/images/hover/Artboard16.jpg"
+import Artboard17 from "..//home/images/hover/Artboard17.jpg"
+import Artboard18 from "..//home/images/hover/Artboard18.jpg"
+import Artboard1 from "..//home/images/Artboard1.jpg";
+import Artboard2 from "..//home/images/Artboard2.jpg";
+import Artboard3 from "..//home/images/Artboard3.jpg";
 import Artboard4 from "../home/images/Artboard4.jpg";
-import Artboard5 from "../home/images/Artboard5.jpg";
-import Artboard6 from "../home/images/Artboard6.jpg";
-import Artboard7 from "../home/images/Artboard7.jpg";
-import Artboard8 from "../home/images/Artboard8.jpg";
-import Artboard9 from "../home/images/Artboard9.jpg";
-import Artboard14 from "../home/images/Artboard14.jpg";
+import Artboard5 from "..//home/images/Artboard5.jpg";
+import Artboard6 from "..//home/images/Artboard6.jpg";
+import Artboard7 from "..//home/images/Artboard7.jpg";
+import Artboard8 from "..//home/images/Artboard8.jpg";
+import Artboard9 from "..//home/images/Artboard9.jpg";
+import Artboard14 from "..//home/images/Artboard14.jpg";
 import { Link } from "react-router-dom";
 
 function Navigation() {
@@ -43,8 +43,8 @@ function Navigation() {
                     {`li.active img.inactive { display: none; }`}
                   </style>
                   <a href="/home">
-                    <img src={Artboard1} className="inactive" alt="icons1" />
-                    <img src={Artboard12} className="active" alt="icons1" />
+                    <img src={Artboard1} className="active" alt="icons1" />
+                    <img src={Artboard12} className="inactive" alt="icons1" />
                   </a>
                 </div>
                 <div className="head-title">
@@ -52,7 +52,7 @@ function Navigation() {
                 </div>
               </li>
               <li className="active">
-  <div className="head-ic-bg">
+  <div className="head-ic-bg">   
     <style>
       {`li.active img.inactive { display: none; }`}
     </style>

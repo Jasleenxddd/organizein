@@ -4756,8 +4756,8 @@ ul.head-menu{
     color: #fff;
     margin-top: 20px;
 }
-.head-ic-bg{
-   background-color: #ffffff1c;
+.head-ic-bg {
+   background-color: #ffffff1c !important;
     border-radius: 50px;
     height: 70px;
     width: 70px;
@@ -4811,8 +4811,8 @@ li.nav-item img {
       color: #fff;
       padding-top: 10px;
 }
-.active .head-ic-bg{
-          background: #fff;
+.head-ic-bg .active {
+          /* background: #fff; */
     color: #713adf;
 }
 .head-ic-bg:hover{
@@ -5090,6 +5090,7 @@ li.active .head-ic-bg img.inactive {
 
 .tabs li .head-ic-bg:hover img.active {
     display: block;
+    border-radius: 50%;
 }
 
 .tabs li .head-ic-bg:hover img.inactive {
