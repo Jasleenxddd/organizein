@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from '../Header';
-import Navigation from '../Navigation';
-import Sidebar from '../kpiNav/SideNavs/SMore';
+import Header from '..//../Header';
+import Navigation from '..//../Navigation';
+import Sidebar from '..//SideNavs/SMore';
 
-import Footer from '../Footer';
-import ContentArea from '../kpiNav/SideNavs/MoreContent';
-import '../Home.css';
+import Footer from '..//../Footer';
+import ContentArea from '..//SideNavs/cPass';
+import '..//../Home.css';
 
-function Web() {
+function ChangePass() {
   return (
     <div className="theme-body">
       <div className="theme-wrapper">
@@ -23,4 +23,4 @@ function Web() {
   );
 }
 
-export default Web;
+export default ChangePass;

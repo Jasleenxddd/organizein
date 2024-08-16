@@ -91,19 +91,19 @@ function Header() {
                 className="dropdown-menu-right mt-1 absolute right-0 z-10 w-56 bg-white shadow-lg rounded-md overflow-hidden"
                 onMouseLeave={closeDropdown}
               >
-                <a className="block text-sm text-gray-700 hover:bg-gray-100 px-4 py-2 flex items-center" href="myacc.html">
+                <a className="block text-sm text-gray-700 hover:bg-gray-100 px-4 py-2 flex items-center" href="/myAcc">
                   <i className="fas fa-user mr-2"></i> Profile
                 </a>
                 <div className="border-t border-gray-200"></div>
-                <a className="block text-sm text-gray-700 hover:bg-gray-100 px-4 py-2 flex items-center" href="myacc.html">
+                <a className="block text-sm text-gray-700 hover:bg-gray-100 px-4 py-2 flex items-center" href="/myAcc">
                   <i className="far fa-question-circle mr-2"></i> Help Center
                 </a>
                 <div className="border-t border-gray-200"></div>
-                <a className="block text-sm text-gray-700 hover:bg-gray-100 px-4 py-2 flex items-center" href="ChangePass.html">
+                <a className="block text-sm text-gray-700 hover:bg-gray-100 px-4 py-2 flex items-center" href="/ChangePass">
                   <i className="fas fa-sign-out-alt mr-2"></i> Change Password
                 </a>
                 <div className="border-t border-gray-200"></div>
-                <a className="block text-sm text-gray-700 hover:bg-gray-100 px-4 py-2 flex items-center" href="login.html">
+                <a className="block text-sm text-gray-700 hover:bg-gray-100 px-4 py-2 flex items-center" href="/login">
                   <i className="fas fa-sign-out-alt mr-2"></i> Logout
                 </a>
               </div>

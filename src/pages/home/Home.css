@@ -5082,6 +5082,11 @@ img.active {
 
 li.active .head-ic-bg img.active {
 	display: block;
+      width: 100%;
+      border-radius: 50%;
+    left: 0% !important;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+
 }
 
 li.active .head-ic-bg img.inactive {
@@ -5089,8 +5094,12 @@ li.active .head-ic-bg img.inactive {
 }
 
 .tabs li .head-ic-bg:hover img.active {
-    display: block;
-    border-radius: 50%;
+      display: block;
+      width: 70%;
+      border-radius: 50%;
+    left: 15% !important;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+
 }
 
 .tabs li .head-ic-bg:hover img.inactive {
@@ -5172,7 +5181,37 @@ ul.head-menu li:last-child .head-ic-bg {
     padding-left: 0;
 }
 
+.tabs li.active .head-ic-bg {
+  background-color: #fff;
+  color: #713adf;
+  transform: scale(1.03);
+  transition-duration: 0.5s;
+}
 
+.tabs li.active img.active {
+  display: block;
+  border-radius: 50%;
+}
+
+.tabs li.active img.inactive {
+  display: none;
+}
+
+/* CSS for hover effect */
+.tabs li:hover .head-ic-bg {
+  background-color: #fff;
+  transform: scale(1.03);
+  transition-duration: 0.5s;
+}
+
+.tabs li:hover img.active {
+  display: block;
+  border-radius: 50%;
+}
+
+.tabs li:hover img.inactive {
+  display: none;
+}
 
 /*------------------------mobile header style--------------------------- */
 .theme-content:not(.topmenu) aside.console-sidemenu {

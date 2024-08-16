@@ -32,28 +32,25 @@ function AdminLogin() {
   return (
     <div className="flex flex-col lg:flex-row h-full bg-[#f0f6ff]">
       <ToastContainer />
+      
       {/* Left Side */}
-      <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#5a78e4] to-[#48a4d4] w-full lg:w-1/4 lg:h-screen p-8 lg:p-12 text-white">
-        <a href="#" className="absolute top-8 left-8 mb-8">
-          <img src={logo} alt="logo" className="w-16 lg:w-16 top-2" />
+      <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#5a78e4] to-[#48a4d4] w-full lg:w-1/3 lg:h-screen p-8 lg:p-12 text-white relative">
+        <a href="#" className="mb-8 lg:mb-16">
+          <img src={logo} alt="logo" className="w-16 lg:w-20" />
         </a>
-        
-        <div className='Overly____div'>
-        <div className=" text-center lg:text-left ml-3 mr-1 absolute top-1/2 transform -translate-y-1/2">
-        <h3 className="font-bold text-lg-4 mb-4">Explore Console</h3>
-      <div>
-        <p className="text-sm-1 text-white">
-          Climb leg rub face on everything give attitude <br></br>nap all day for under the bed.
-          Chase mice attack<br></br> feet but rub face on everything hopped up.
-        </p>
-      </div>
+
+        <div className="text-center lg:text-left lg:absolute lg:inset-y-1/2 lg:transform lg:-translate-y-1/2 lg:px-4">
+          <h3 className="font-bold text-lg mb-4">Explore Console</h3>
+          <p className="text-sm leading-relaxed">
+            Climb leg rub face on everything give attitude<br />
+            nap all day for under the bed. Chase mice<br />
+            attack feet but rub face on everything hopped up.
+          </p>
         </div>
-        </div>
-        
       </div>
 
       {/* Right Side */}
-      <div className="flex justify-center items-center w-full lg:w-3/4 p-8">
+      <div className="flex justify-center items-center w-full lg:w-2/3 p-8">
         <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
           <h5 className="text-blue-700 font-semibold mb-6">Admin Login</h5>
           <form>

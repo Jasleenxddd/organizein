@@ -9,8 +9,9 @@ import Social from './pages/home/kpiNav/Social';
 import Web from './pages/home/kpiNav/Web';
 import Mail from './pages/home/kpiNav/Mail';
 import More from './pages/home/kpiNav/More';
-
-
+import MyAcc from './pages/home/kpiNav/SideNavs/MyAcc';
+import ChangePass from './pages/home/kpiNav/SideNavs/ChangePass';
+import ProjectDetails from './pages/home/kpiNav/SideNavs/ProjectDetails';
 const App = () => {
   return (
     <>
@@ -25,7 +26,9 @@ const App = () => {
           <Route path="/Web" element={<Web />} />
           <Route path="/Mail" element={<Mail />} />
           <Route path="/More" element={<More />} />
-
+          <Route path="/MyAcc" element={<MyAcc />} />
+          <Route path="/ChangePass" element={<ChangePass />} />
+          <Route path="/ProjectDetails" element={<ProjectDetails />} />
           <Route path="/" element={<Register />} />
         </Routes>
       </Router>
