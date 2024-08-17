@@ -43,20 +43,27 @@ function Register() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row h-full min-h-screen bg-[#f0f6ff]">
+    <div className="flex flex-col lg:flex-row h-full bg-[#f0f6ff]">
       <ToastContainer />
       
       {/* Left Side */}
-      <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#5a78e4] to-[#48a4d4] w-full lg:w-1/4 p-8 lg:p-12 text-white">
-        <a href="#" className="mb-8 lg:mb-12">
-          <img src={logo} alt="logo" className="w-16 lg:w-16" />
+      <div className="flex flex-col justify-start items-center bg-gradient-to-r from-[#5a78e4] to-[#48a4d4] w-full lg:w-1/4 lg:h-screen p-8 lg:p-12 text-white relative">
+        <a href="#" className="absolute top-8 left-8 mb-8">
+          <img src={logo} alt="logo" className="w-16 lg:w-16 top-2" />
         </a>
-        <div className="text-center lg:text-left">
-          <h3 className="font-bold text-lg-4 mb-4">Explore Console</h3>
-          <p className="text-sm-1">
-            Climb leg rub face on everything, give attitude, nap all day for under the bed. Chase mice, attack feet, but rub face on everything hopped up.
-          </p>
+
+        <div className='Overly____div'>
+          <div className="text-center lg:text-left ml-3 mr-1 absolute top-2/4 transform -translate-y-1/2">
+            <h3 className="font-bold text-lg-4 mb-4">Explore Console</h3>
+            <div>
+              <p className="text-sm-1 text-white">
+                Climb leg rub face on everything give attitude<br></br>nap all day for under the bed.
+                Chase mice attack<br></br>feet but rub face on everything hopped up.
+              </p>
+            </div>
+          </div>
         </div>
+
       </div>
 
       {/* Right Side */}
@@ -116,12 +123,21 @@ function Register() {
               </label>
             </div>
 
-            <div className="mb-6">
-              <input type="checkbox" id="rcvmail" name="rcvmail" checked={receiveMail} onChange={handleInputChange} className="mr-2" />
-              <label htmlFor="rcvmail" className="text-sm text-gray-600">
-                I agree to receive emails that will teach me how to generate more traffic and use usersuggest <a className="text-blue-600 underline">(required)</a>
-              </label>
-            </div>
+            <div className="mb-6 flex items-center">
+  <input 
+    type="checkbox" 
+    id="rcvmail" 
+    name="rcvmail" 
+    checked={receiveMail} 
+    onChange={handleInputChange} 
+    className="mr-2" 
+  />
+  <label htmlFor="rcvmail" className="text-sm text-gray-600">
+    I agree to receive emails that will teach me how to generate more traffic and use usersuggest 
+    <a className="text-blue-600 underline"> (required)</a>
+  </label>
+</div>
+
 
             <button
               type="button"
