@@ -33,13 +33,18 @@ function Navigation() {
   return (
     <div id="tabing-head">
       <div className="container">
-      <div className="task-logo-container">
-  <div className="task-logo w-30 h-30 absolute top-40 left-12 shadow-lg flex justify-center items-center z-50 rounded-full bg-white">
-    <img src="https://i.ibb.co/cNYYY7p/Picture1.png" alt="task-logo" className="rounded-full object-cover w-full h-full" />
-  </div>
-</div>
-
         <div className="row">
+          <div className="col-12 d-flex justify-content-center mb-3">
+            <div className="task-logo-container">
+              <div className="task-logo w-30 h-30 shadow-lg flex justify-center items-center z-50 rounded-full bg-white">
+                <img
+                  src="https://i.ibb.co/cNYYY7p/Picture1.png"
+                  alt="task-logo"
+                  className="rounded-full object-cover w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
           <div className="col-md-12 col-3 tabs">
             <ul className="head-menu">
               <li className={activeTab === '/home' ? 'active' : ''}>

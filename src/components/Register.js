@@ -115,12 +115,20 @@ function Register() {
               </div>
             </div>
 
-            <div className="mb-4">
-              <input type="checkbox" id="privacy" name="Privacy" checked={privacy} onChange={handleInputChange} className="mr-2" />
-              <label htmlFor="privacy" className="text-sm text-gray-600">
-                I agree to the <a className="text-blue-600 underline">privacy policy</a> and <a className="text-blue-600 underline">terms of use</a>
-              </label>
-            </div>
+            <div className="mb-4 flex items-center">
+  <input 
+    type="checkbox" 
+    id="privacy" 
+    name="Privacy" 
+    checked={privacy} 
+    onChange={handleInputChange} 
+    className="mr-2" 
+  />
+  <label htmlFor="privacy" className="text-sm text-gray-600">
+    I agree to the <a className="text-blue-600 underline">privacy policy</a> and <a className="text-blue-600 underline">terms of use</a>
+  </label>
+</div>
+
 
             <div className="mb-6 flex items-center">
               <input 
