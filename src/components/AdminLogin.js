@@ -33,23 +33,22 @@ function AdminLogin() {
     <div className="flex flex-col lg:flex-row h-full bg-[#f0f6ff]">
       <ToastContainer />
       {/* Left Side */}
-      <div className="flex flex-col justify-start items-center bg-gradient-to-r from-[#5a78e4] to-[#48a4d4] w-full lg:w-1/4 lg:h-screen p-8 lg:p-12 text-white relative">
+      <div className="flex flex-col justify-start items-center bg-gradient-to-r from-[#5a78e4] to-[#48a4d4] w-full h-2/4 lg:w-1/4 lg:h-screen p-8 lg:p-12 text-white relative lg:justify-center lg:items-start overflow-hidden">
         <a href="#" className="absolute top-8 left-8 mb-8">
           <img src={logo} alt="logo" className="w-16 lg:w-16 top-2" />
         </a>
 
-        <div className='Overly____div'>
-          <div className="text-center lg:text-left ml-3 mr-1 absolute top-2/4 transform -translate-y-1/2">
+        <div className='Overly____div w-full '>
+          <div className="text-center lg:text-left ml-2 mr-1  lg:ml-5  relative lg:absolute lg:top-2/4 lg:transform lg:-translate-y-1/2">
             <h3 className="font-bold text-lg-4 mb-4">Explore Console</h3>
             <div>
-              <p className="text-sm-1 text-white">
+              <p className="text-sm-2 text-white lg:text-sm-1">
                 Climb leg rub face on everything give attitude<br></br>nap all day for under the bed.
                 Chase mice attack<br></br>feet but rub face on everything hopped up.
               </p>
             </div>
           </div>
         </div>
-
       </div>
 
       {/* Right Side */}
